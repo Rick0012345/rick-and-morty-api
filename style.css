@@ -1,0 +1,93 @@
+.character {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(0, 255, 234);
+
+    animation: cards 1.5s infinite alternate;
+}
+body{
+    background-image: url("back.jpg");
+}
+.dead {
+    background-color: rgb(255, 0, 0);
+    animation: none; /* Para parar a animação quando o personagem estiver "Dead" */
+}
+.unknown{
+    animation: unknown 1.5s infinite alternate;
+}
+@keyframes unknown {
+    from {
+        background-color: rgb(158, 177, 194);
+    }
+    to{
+        background-color: black;
+    }
+}
+@keyframes cards {
+    from {
+        background-color: aqua;
+    }
+    to {
+        background-color: rgb(0, 255, 55);
+    }
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(0, 255, 55);
+}
+.title{
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+.star {
+    cursor: pointer; /* Muda o cursor ao passar sobre a estrela */
+    font-size: 24px; /* Tamanho da estrela */
+    color: gray; /* Cor padrão da estrela */
+}
+
+.star.favorited {
+    color: gold; /* Cor da estrela quando acesa */
+}
+
+.favorite-button {
+    background-color: rgb(0, 255, 55);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px; /* Espaço entre a estrela e o botão */
+}
+
+.favorite-button:hover {
+    background-color: rgb(0, 200, 45); /* Cor de fundo ao passar o mouse */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> 
+        <ul class="menu">
+            <li><a href="index.html">Personagens</a></li>
+            <li><a href="episodes.html">Episódios</a></li>
+            <li><a href="fav.html">Favoritos</a></li>
+        </ul>
+    </nav>
+
+    <center><h1 class="title">Personagens de Rick and Morty</h1></center>
+    
+    <!-- Botões de filtragem -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button id="filter-alive">Alive</button>
+        <button id="filter-dead">Dead</button>
+        <button id="filter-unknown">Unknown</button>
+        <button id="filter-all">All</button>
+    </div>
+    
+
+    <center><div id="characters"></div></center>
+
+    <script src="script.js"></script>
+</body>
+</html>
