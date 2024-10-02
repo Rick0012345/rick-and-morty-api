@@ -20,10 +20,11 @@
     
     <!-- Botões de filtragem -->
     <div style="text-align: center; margin-bottom: 20px;">
-        <button id="filter-alive">Alive</button>
-        <button id="filter-dead">Dead</button>
-        <button id="filter-unknown">Unknown</button>
-        <button id="filter-all">All</button>
+        <button onclick="applyFilter('All')">Todos</button>
+        <button onclick="applyFilter('Alive')">Vivos</button>
+        <button onclick="applyFilter('Dead')">Mortos</button>
+        <button onclick="applyFilter('unknown')">Desconhecido</button>
+
     </div>
     
 
